@@ -4,15 +4,27 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MaterialModule } from './material/material.module';
+import { MenuBarComponent } from './common/menu-bar/menu-bar.component';
+import { HomeComponent } from './pages/home/home.component';
+import { ProjectsComponent } from './pages/projects/projects.component';
+import { ReviewsComponent } from './pages/reviews/reviews.component';
+import { ContactsComponent } from './pages/contacts/contacts.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    MenuBarComponent,
+    HomeComponent,
+    ProjectsComponent,
+    ReviewsComponent,
+    ContactsComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MaterialModule
   ],
   providers: [],
   bootstrap: [AppComponent]
