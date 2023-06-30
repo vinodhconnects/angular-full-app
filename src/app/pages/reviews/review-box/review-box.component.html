@@ -1,0 +1,5 @@
+<div  class="review">
+      <h3> <span class="name"> {{review.name | uppercase }}</span> says ....</h3>
+      <p> {{review.message | quoteit}}</p>
+      <h5 [serviceDetail]="review.type">{{review.type}}</h5>
+</div>

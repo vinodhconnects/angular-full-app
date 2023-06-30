@@ -1,1 +1,7 @@
-<p>reviews works!</p>
+<h2> Reviews from Customers </h2>
+<div>
+    <select [(ngModel)]="selected">
+        <option *ngFor="let n of types">{{n}}</option>
+    </select>
+</div>
+<app-review-box *ngFor="let x of reviews | typefilter: selected " [review]="x"></app-review-box>

@@ -14,6 +14,11 @@ import { HttpClientModule } from '@angular/common/http';
 import { ContactBoxComponent } from './pages/contacts/contact-box/contact-box.component';
 import { ServiceBoxComponent } from './pages/home/service-box/service-box.component';
 import { DetailsComponent } from './pages/home/details/details.component';
+import { ReviewBoxComponent } from './pages/reviews/review-box/review-box.component';
+import { ServiceDetailDirective } from './directives/service-detail.directive';
+import { QuoteitPipe } from './pipes/quoteit.pipe';
+import { FormsModule } from '@angular/forms';
+import { TypefilterPipe } from './pipes/typefilter.pipe';
 
 @NgModule({
   declarations: [
@@ -25,14 +30,19 @@ import { DetailsComponent } from './pages/home/details/details.component';
     ContactsComponent,
     ContactBoxComponent,
     ServiceBoxComponent,
-    DetailsComponent
+    DetailsComponent,
+    ReviewBoxComponent,
+    ServiceDetailDirective,
+    QuoteitPipe,
+    TypefilterPipe
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MaterialModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
