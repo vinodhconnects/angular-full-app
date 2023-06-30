@@ -7,5 +7,5 @@ import { Service } from 'src/app/models/service';
   styleUrls: ['./service-box.component.css']
 })
 export class ServiceBoxComponent {
-  @Input() service:Service= {title:"",image:"",description:""}
+  @Input() service:Service= {id:0, title:"",image:"",description:""}
 }
