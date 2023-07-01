@@ -19,6 +19,7 @@ import { ServiceDetailDirective } from './directives/service-detail.directive';
 import { QuoteitPipe } from './pipes/quoteit.pipe';
 import { FormsModule } from '@angular/forms';
 import { TypefilterPipe } from './pipes/typefilter.pipe';
+import { ReviewFormComponent } from './pages/reviews/review-form/review-form.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { TypefilterPipe } from './pipes/typefilter.pipe';
     ReviewBoxComponent,
     ServiceDetailDirective,
     QuoteitPipe,
-    TypefilterPipe
+    TypefilterPipe,
+    ReviewFormComponent
   ],
   imports: [
     BrowserModule,

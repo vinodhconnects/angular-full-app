@@ -1,0 +1,37 @@
+<div class="rform">
+    <h3> Post your review</h3>
+   <table>
+      <tr>
+         <td class="item-label"> Name </td>
+         <td><input type="text" class="medium-input" [(ngModel)]="name"></td>
+      </tr>
+      <tr>
+        <td class="item-label"> Email </td>
+        <td><input type="text" class="medium-input" [(ngModel)]="email"></td>
+     </tr>
+     <tr>
+        <td class="item-label"> Type </td>
+        <td><select class="medium-input" [(ngModel)]="type"> 
+              <option *ngFor="let x of types">{{x}}</option>
+        </select></td>
+     </tr>
+
+     <tr>
+        <td class="item-label"> Message </td>
+        <td><textarea class="large-input" [(ngModel)]="message"></textarea></td>
+     </tr>
+
+     <tr>
+    
+        <td style="text-align: center" colspan="2">
+            <button mat-raised-button color="primary" type="button"
+               (click)="postReview()"
+             >Post Review</button></td>
+     </tr>
+   </table>
+  <div  *ngIf="errors.length!=0">
+          <ul>
+              <li *ngFor="let x of errors">{{x}}</li>
+          </ul>
+  </div>
+</div>

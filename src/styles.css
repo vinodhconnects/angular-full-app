@@ -2,3 +2,32 @@
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.small-input {
+    width: 200px
+}
+.medium-input {
+    width: 300px;
+}
+.large-input {
+    width: 450px;
+}
+
+.item-label {
+    font-family:  'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(69, 67, 67);
+    font-size: 20px;
+}
+input[type="text"], input[type="password"], select {
+    height: 35px;
+    padding : 5px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-radius: 3px;
+    border: 2px solid rgb(67, 67, 67);
+    margin: 10px;
+}
+
+textarea {
+    height: 200px;
+    border: 2px solid rgb(67, 67, 67);
+}
