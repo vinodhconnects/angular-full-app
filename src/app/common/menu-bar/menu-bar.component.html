@@ -5,5 +5,10 @@
         <li> <a routerLink="/projects"> Projects </a></li>
         <li> <a routerLink="/reviews"> Reviews </a></li>
         <li> <a routerLink="/contacts"> Contacts </a></li>
+        <li> <a routerLink="/admin/home" *ngIf="loginStatus"> Admin </a></li>
     </ul>
+    <ul class="login">
+        <li> <a (click)="login()"> {{loginMessage}}  </a></li>
+    </ul>
+    
 </mat-toolbar>
