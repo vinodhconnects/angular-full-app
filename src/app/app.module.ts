@@ -17,9 +17,10 @@ import { DetailsComponent } from './pages/home/details/details.component';
 import { ReviewBoxComponent } from './pages/reviews/review-box/review-box.component';
 import { ServiceDetailDirective } from './directives/service-detail.directive';
 import { QuoteitPipe } from './pipes/quoteit.pipe';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { TypefilterPipe } from './pipes/typefilter.pipe';
 import { ReviewFormComponent } from './pages/reviews/review-form/review-form.component';
+import { EnquiryFormComponent } from './pages/home/enquiry-form/enquiry-form.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,8 @@ import { ReviewFormComponent } from './pages/reviews/review-form/review-form.com
     ServiceDetailDirective,
     QuoteitPipe,
     TypefilterPipe,
-    ReviewFormComponent
+    ReviewFormComponent,
+    EnquiryFormComponent
   ],
   imports: [
     BrowserModule,
@@ -44,7 +46,8 @@ import { ReviewFormComponent } from './pages/reviews/review-form/review-form.com
     BrowserAnimationsModule,
     MaterialModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,46 @@
+<div class="rform">
+    <h3> Post your Enquiry</h3>
+   <form [formGroup]="eform" (submit)="postEnquiry()">
+   <table>
+      <tr>
+         <td class="item-label"> Name [ min 3 chars] </td>
+         <td><input type="text" class="medium-input" formControlName="name"></td>
+      </tr>
+      <tr>
+        <td class="item-label"> Email </td>
+        <td><input type="text" class="medium-input" formControlName="email"></td>
+     </tr>
+     <tr>
+        <td class="item-label"> Subject [min 5 chars] </td>
+        <td><input type="text" class="large-input" formControlName="subject"></td>
+     </tr>
+
+     <tr>
+        <td class="item-label"> Description [min 20 chars] </td>
+        <td><textarea class="large-input" formControlName="description"></textarea></td>
+     </tr>
+
+     
+
+     <tr *ngIf="ftoggle">
+        <td class="item-label"> Upload File </td>
+        <td><input type="file" class="medium-input" 
+          
+         (change)="uploadFile1($event)" ></td>
+     </tr>
+
+     <tr>
+    
+        <td style="text-align: center" colspan="2">
+            <button mat-raised-button color="primary" 
+              type="submit"
+               [disabled]="!eform.valid"
+             >Post Enquiry</button></td>
+     </tr>
+   </table>
+</form>
+   
+<br/><br/>
+       <mat-slide-toggle [(ngModel)]="ftoggle">Upload Document</mat-slide-toggle>
+
+</div>
