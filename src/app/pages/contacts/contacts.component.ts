@@ -10,6 +10,7 @@ import { ContactService } from 'src/app/services/contact.service';
 export class ContactsComponent {
   contacts:Contact[]=[];
       constructor(private cs:ContactService){
+        console.log("Component contact created")
                    this.cs.getContacts().subscribe(
                      {
                         next:  (data:Contact[])=> this.contacts = data,
@@ -17,5 +18,7 @@ export class ContactsComponent {
                      }
                    )
               }
+
+            
 
 }
