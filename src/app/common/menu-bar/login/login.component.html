@@ -1,0 +1,26 @@
+<div class="login">
+     <table>
+          <tr>
+             <td>
+                 Email
+             </td>
+             <td>
+                <input type="text" [(ngModel)]="email" class="medium-input">
+             </td>
+          </tr>
+
+          <tr>
+            <td>
+                Passsword
+            </td>
+            <td>
+               <input type="password" [(ngModel)]="password" class="medium-input">
+            </td>
+         </tr>
+       <tr>
+        <td colspan="2" [style.textAlign]="'center'">
+         <button mat-raised-button color="primary" (click)="login()"
+        >login</button></td>
+    </tr>
+     </table>
+</div>

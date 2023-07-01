@@ -1,4 +1,13 @@
 {
+  "users": [
+    {
+      "email": "roger@gmail.com",
+      "password": "$2a$10$NkJ93ZIceGuQmerOWwdxU.ouNV3rdhPLISk7ckoBxRmW5wi8OXc/G",
+      "username": "roger",
+      "usertype": "admin",
+      "id": 1
+    }
+  ],
   "contacts": [
     {
       "title": "Corporate Branch",

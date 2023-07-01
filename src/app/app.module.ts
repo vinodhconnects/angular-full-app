@@ -21,6 +21,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { TypefilterPipe } from './pipes/typefilter.pipe';
 import { ReviewFormComponent } from './pages/reviews/review-form/review-form.component';
 import { EnquiryFormComponent } from './pages/home/enquiry-form/enquiry-form.component';
+import { LoginComponent } from './common/menu-bar/login/login.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +39,8 @@ import { EnquiryFormComponent } from './pages/home/enquiry-form/enquiry-form.com
     QuoteitPipe,
     TypefilterPipe,
     ReviewFormComponent,
-    EnquiryFormComponent
+    EnquiryFormComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
